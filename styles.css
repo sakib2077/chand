@@ -555,8 +555,8 @@ a {
 .site-footer {
   position: relative;
   margin-top: 1.4rem;
-  height: 800px !important;
-  min-height: 800px !important;
+  height: 400px !important;
+  min-height: 400px !important;
   background: url('img/slider/rockgardannnnn.jpg') center center / cover no-repeat;
   color: #fdf7ee;
   border-top: 1px solid rgba(255,255,255,0.18);
@@ -573,8 +573,8 @@ a {
 .footer-inner {
   position: relative;
   z-index: 1;
-  padding-top: 2.8rem;
-  padding-bottom: 2.6rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.3rem;
 }
 
 .footer-grid {
