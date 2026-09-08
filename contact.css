@@ -171,10 +171,23 @@ body {
 
 @media (max-width: 640px) {
   .contact-card {
-    padding: 28px;
+    padding: 1.25rem;
   }
 
   .page-heading {
     padding: 0 0.5rem;
+  }
+
+  .page-heading h1 {
+    font-size: clamp(2rem, 11vw, 2.75rem);
+  }
+
+  .map-frame {
+    height: 360px;
+  }
+
+  .office-details ul {
+    list-style-position: outside;
+    padding-left: 1.2rem;
   }
 }

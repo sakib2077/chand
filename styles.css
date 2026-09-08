@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -22,6 +26,7 @@ main.container {
   max-width: 100%;
   width: 100%;
   padding: 0;
+  padding-top: 0 !important;
 }
 
 img {
@@ -131,7 +136,9 @@ a {
 }
 
 .main-nav .container {
-  overflow: visible;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .nav-links {
@@ -216,6 +223,7 @@ a {
   width: 100%;
   max-width: 100%;
   margin: 0;
+  margin-top: 0 !important;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -223,11 +231,8 @@ a {
 }
 
 .hero-swiper {
-  /* Keep the slider at the same ratio as the hero artwork so it is never cropped. */
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  aspect-ratio: 1672 / 941;
+  height: 72vh;
+  min-height: 520px;
   position: relative;
   overflow: hidden;
 }
@@ -559,16 +564,11 @@ a {
 .site-footer {
   position: relative;
   margin-top: 1.4rem;
-  height: clamp(480px, 35vw, 620px);
-  min-height: 480px;
-  background-color: #f1f4fc;
-  background-image: url('images/hero-2.png');
-  background-repeat: no-repeat;
-  /* The monument sits softly behind the columns, like the reference design. */
-  background-position: center bottom;
-  background-size: cover;
-  color: #1f2c42;
-  border-top: 1px solid rgba(78, 98, 128, 0.12);
+  height: 400px !important;
+  min-height: 400px !important;
+  background: url('img/slider/rockgardannnnn.jpg') center center / cover no-repeat;
+  color: #fdf7ee;
+  border-top: 1px solid rgba(255,255,255,0.18);
   background-attachment: scroll;
 }
 
@@ -785,6 +785,25 @@ a {
 }
 
 @media (max-width: 991px) {
+  .site-header .container,
+  main.container {
+    padding-inline: 1rem;
+  }
+
+  .site-header .row {
+    text-align: center;
+  }
+
+  .site-header .col-lg-8,
+  .site-header .col-lg-4 {
+    justify-content: center;
+  }
+
+  .search-box {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
   .content-grid {
     grid-template-columns: 1fr;
   }
@@ -807,16 +826,66 @@ a {
   }
 
   .hero-swiper {
-    aspect-ratio: 1672 / 941;
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5rem;
+    height: 390px;
   }
 }
 
 @media (max-width: 640px) {
+  .top-bar {
+    font-size: 0.78rem;
+  }
+
+  .top-bar .container {
+    align-items: stretch;
+    gap: 0.35rem !important;
+    padding-inline: 0.75rem;
+  }
+
+  .top-links,
+  .top-bar .container > .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem 0.75rem;
+  }
+
+  .top-bar a {
+    margin-right: 0;
+  }
+
+  .site-header .container,
+  main.container {
+    padding-inline: 0.75rem;
+  }
+
+  .site-header .row {
+    gap: 0.85rem !important;
+  }
+
+  .brand-mark {
+    width: 58px;
+    height: 58px;
+    font-size: 1.15rem;
+  }
+
+  .site-title {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
+    line-height: 1.08;
+  }
+
+  .site-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .eyebrow {
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+  }
+
+  .main-nav .container {
+    padding-inline: 0.45rem;
+  }
+
   .top-bar .container {
     justify-content: center;
   }
@@ -834,40 +903,15 @@ a {
   }
 
   .hero-swiper {
-    aspect-ratio: 1672 / 941;
+    height: 320px;
   }
 
-  .slide-caption {
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    width: auto;
-    max-width: none;
-    padding: 0.7rem 0.85rem;
+  .gallery-grid {
+    columns: 1 100%;
   }
 
-  .slide-caption h2 {
-    font-size: clamp(1.05rem, 5.7vw, 1.45rem);
-  }
-
-  .slide-caption p {
-    margin-bottom: 0;
-    font-size: clamp(0.72rem, 3.3vw, 0.9rem);
-    line-height: 1.35;
-  }
-
-  .slide-kicker {
-    font-size: 0.55rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .site-footer {
-    height: auto;
-    min-height: 0;
-  }
-
-  .footer-inner {
-    padding: 1.25rem 1rem;
+  .gallery-item img {
+    height: 200px;
   }
 
   .footer-grid {
@@ -875,7 +919,7 @@ a {
     gap: 1.25rem;
   }
 
-  .gallery-grid {
-    columns: 1 100%;
+  .site-footer {
+    min-height: 0;
   }
 }

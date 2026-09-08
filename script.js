@@ -124,7 +124,9 @@ pageButtons.forEach(btn => {
   });
 });
 
-renderGallery();
+if (galleryGrid) {
+  renderGallery();
+}
 
 // Dropdown toggle for touch / narrow screens
 document.querySelectorAll('.nav-links .dropdown > a').forEach(link => {
