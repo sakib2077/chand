@@ -12,18 +12,18 @@ if (window.Swiper) {
 }
 
 const galleryItems = [
-  { title: 'Rock Garden Mosaic', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-1.jpg' },
-  { title: 'Capitol Complex Pavilion', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-2.jpg' },
-  { title: 'Open Hand Monument', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-3.jpg' },
-  { title: 'Pinjore Garden Terrace', location: 'Pinjore, Haryana', category: 'monuments', img: 'images/hero-4.jpg' },
-  { title: 'Government Museum Gallery', location: 'Sector 10, Chandigarh', category: 'museums', img: 'images/hero-5.jpg' },
-  { title: 'Sukhna Lake Heritage Walk', location: 'Sukhna Lake', category: 'events', img: 'images/hero-6.jpg' },
-  { title: 'Excavation at Pinjore', location: 'Pinjore Gardens', category: 'excavations', img: 'images/hero-4.jpg' },
-  { title: 'Museum Conservation Lab', location: 'Sector 10, Chandigarh', category: 'museums', img: 'images/hero-5.jpg' },
-  { title: 'Archaeological Findings', location: 'Chandigarh Circle', category: 'excavations', img: 'images/hero-2.jpg' },
-  { title: 'Stone Conservation Workshop', location: 'Sector 18, Chandigarh', category: 'restoration', img: 'images/hero-3.jpg' },
-  { title: 'Public Outreach Programme', location: 'Rock Garden', category: 'events', img: 'images/hero-1.jpg' },
-  { title: 'Restoration of Heritage Gate', location: 'Sector 15, Chandigarh', category: 'restoration', img: 'images/hero-6.jpg' }
+  { title: 'Rock Garden Mosaic', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-1.png' },
+  { title: 'Capitol Complex Pavilion', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-2.png' },
+  { title: 'Open Hand Monument', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-3.png' },
+  { title: 'Pinjore Garden Terrace', location: 'Pinjore, Haryana', category: 'monuments', img: 'images/hero-4.png' },
+  { title: 'Government Museum Gallery', location: 'Sector 10, Chandigarh', category: 'museums', img: 'images/hero-5.png' },
+  { title: 'Sukhna Lake Heritage Walk', location: 'Sukhna Lake', category: 'events', img: 'images/hero-1.png' },
+  { title: 'Excavation at Pinjore', location: 'Pinjore Gardens', category: 'excavations', img: 'images/hero-4.png' },
+  { title: 'Museum Conservation Lab', location: 'Sector 10, Chandigarh', category: 'museums', img: 'images/hero-5.png' },
+  { title: 'Archaeological Findings', location: 'Chandigarh Circle', category: 'excavations', img: 'images/hero-2.png' },
+  { title: 'Stone Conservation Workshop', location: 'Sector 18, Chandigarh', category: 'restoration', img: 'images/hero-3.png' },
+  { title: 'Public Outreach Programme', location: 'Rock Garden', category: 'events', img: 'images/hero-1.png' },
+  { title: 'Restoration of Heritage Gate', location: 'Sector 15, Chandigarh', category: 'restoration', img: 'images/hero-5.png' }
 ];
 
 const galleryFallbacks = [
