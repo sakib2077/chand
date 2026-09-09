@@ -12,11 +12,11 @@ if (window.Swiper) {
 }
 
 const galleryItems = [
-  { title: 'Rock Garden Mosaic', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-1.png' },
-  { title: 'Capitol Complex Pavilion', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-2.png' },
-  { title: 'Open Hand Monument', location: 'Sector 1, Chandigarh', category: 'monuments', img: 'images/hero-3.png' },
-  { title: 'Pinjore Garden Terrace', location: 'Pinjore, Haryana', category: 'monuments', img: 'images/hero-4.png' },
-  { title: 'Government Museum Gallery', location: 'Sector 10, Chandigarh', category: 'museums', img: 'images/hero-5.png' },
+  { title: 'Kala Amb Memorial', location: 'Panipat', category: 'monuments', img: 'images/m1.jpeg' },
+  { title: 'Agroha Mound', location: 'Agroha', category: 'monuments', img: 'images/m2.jpeg' },
+  { title: "Ibrahim Khan Sur's Tomb", location: 'Narnaul', category: 'monuments', img: 'images/m3.jpeg' },
+  { title: 'Jal Mahal', location: 'Narnaul', category: 'monuments', img: 'images/m4.jpeg' },
+  { title: 'Kabuli Bagh Mosque', location: 'Panipat', category: 'monuments', img: 'images/m5.png' },
   { title: 'Sukhna Lake Heritage Walk', location: 'Sukhna Lake', category: 'events', img: 'images/hero-1.png' },
   { title: 'Excavation at Pinjore', location: 'Pinjore Gardens', category: 'excavations', img: 'images/hero-4.png' },
   { title: 'Museum Conservation Lab', location: 'Sector 10, Chandigarh', category: 'museums', img: 'images/hero-5.png' },
