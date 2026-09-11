@@ -131,13 +131,13 @@ a {
   background: rgba(38, 30, 24, 0.92);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   position: relative;
-  z-index: 1;
+  z-index: 10;
   margin-top: 0;
 }
 
 .main-nav .container {
   max-width: 100%;
-  overflow-x: auto;
+  overflow: visible;
   scrollbar-width: thin;
 }
 
@@ -204,8 +204,6 @@ a {
   background: rgba(122,61,20,0.06);
 }
 
-.nav-links .dropdown:hover .dropdown-menu,
-.nav-links .dropdown:focus-within .dropdown-menu,
 .nav-links .dropdown.open .dropdown-menu {
   display: block;
 }
